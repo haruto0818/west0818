@@ -1,0 +1,21 @@
+databases:
+  - name: ibaraki-tourism-website_DB
+    databaseName: ibaraki-tourism-website_db
+    user: ibaraki tourism website
+    region: singapore
+
+services:
+  - type: web
+    name: ibaraki tourism website
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: ibaraki tourism website_DB
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
