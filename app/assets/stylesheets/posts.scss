@@ -1,0 +1,199 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.back{
+    background-color: #E4F3F2;
+}
+.ddmenu{
+    margin-left: 80%;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: serif;
+}
+.theme1{
+    font-size: 70px;
+    padding-top: 120px;
+    text-align: center;
+    font-family: serif;
+}
+.top_container{
+    height: 400px;
+    width: 100%;
+    background-color: #E4F3F2;
+}
+.top_image{
+    margin-top: -10%;
+    height: 900px;   
+    width: 100%; 
+}
+.merit_container{
+    display: flex;
+    font-size: 20px;
+    margin-top: 200px;
+    margin-bottom: 250px;
+    margin-left: 70px;
+}
+.title1{
+    margin-bottom: 80px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.theme2{
+    font-size: 50px;
+    font-family: serif;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.theme3{
+    font-size: 17px;
+    font-family: serif;
+}
+.image{
+    margin-top: 150px;
+    
+}
+.area{
+    font-size: 40px;   
+    margin-left: 80px;
+}
+.area1{
+    font-size: 20px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+.banzi_image{
+    margin-top: 10%;
+    margin-right: 70px;
+    height: 25vw;    
+}
+.north{
+    margin-top: 5%;
+    font-weight: 700;
+    font-size: 30px;
+}
+.underline_black{
+    border-bottom: 1px solid #000000;
+}
+.aqua_image{
+    margin-top: 10%;
+    margin-left: 70px;
+    height: 25vw;    
+}
+.central{
+    margin-top: 5%;
+    margin-left: 70px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.underline_black{
+    border-bottom: 1px solid #000000;
+}
+.tsukuba_image{
+    margin-top: 10%;
+    margin-right: 70px;
+    height: 25vw;    
+}
+.west{
+    margin-top: 5%;
+    font-weight: 700;
+    font-size: 30px;
+}
+.underline_black{
+    border-bottom: 1px solid #000000;
+}
+.unagi_image{
+    margin-top: 10%;
+    margin-left: 70px;
+    height: 25vw;    
+}
+.south{
+    margin-top: 5%;
+    margin-left: 70px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.underline_black{
+    border-bottom: 1px solid #000000;
+}
+.zinzya_image{
+    margin-top: 10%;
+    height: 25vw;    
+}
+.rokko{
+    margin-top: 5%;
+    font-weight: 700;
+    font-size: 30px;
+}
+.underline_black{
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000000;
+}
+.northcentral{
+    display: flex;
+    justify-content: center;
+}
+.sub1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+}
+.sub2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    padding-left: 70px;
+}
+.westsouth{
+    display: flex;
+    justify-content: center;
+}
+.rokko_ibaraki{
+    margin-left: 30%;
+}
+.middle_image{
+    margin-top: 250px;
+    margin-bottom: 250px;
+    height: 1000px;   
+    width: 100%;    
+}
+.genre_container{
+    padding-bottom: 100px;
+}
+.photo1_image{
+    height: 54vw;
+}
+.photo2_image{
+    height: 57vw;
+    margin-left: 205px;
+}
+.introduction1{
+    padding-left: 150px;
+    padding-top: 250px;
+}
+.introduction2{
+    padding-left: 150px;
+    padding-top: 300px;
+}
+.food_theme{
+    display: flex;
+}
+.sightseeing_theme{
+    display: flex;
+}
+.tag1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.tag2{
+    font-size: 13px;
+}
+.tag3{
+    font-size: 48px;
+    font-family: serif;
+    font-weight: bold;
+    padding-top: 60px;
+    padding-left: 20px;
+}

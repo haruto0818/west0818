@@ -1,0 +1,8 @@
+<p>Q1.茨城に求めていることは？</p>
+<%= form_for(@topic, class: 'form-horizontal', role: 'form') do |f| %>
+  <%= f.radio_button :question, "1" %>
+  <%= label_tag :question_1, "フード" %>
+  <%= f.radio_button :question, "2" %>
+  <%= label_tag :question_2, "観光" %>
+  <input type="submit" value="次へ">
+<% end %>

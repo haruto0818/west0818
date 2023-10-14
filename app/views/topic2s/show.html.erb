@@ -1,0 +1,40 @@
+<% if @topic2.question2 == 3  %>
+  <%= form_for(@topic3) do |f| %>
+    <p>Q3.どちらが好み？</p>
+    <%= f.radio_button :question3, "7" %>
+    <%= label_tag :question_7, "フルーツ" %>
+    <%= f.radio_button :question3, "8" %>
+    <%= label_tag :question_8, "菓子" %>
+    <input type="submit" value="次へ">
+  <% end %>
+<% end %>
+<% if @topic2.question2 == 4  %>
+  <%= form_for(@topic3) do |f| %>
+    <p>Q3.どちらが好み？</p>
+    <%= f.radio_button :question3, "9" %>
+    <%= label_tag :question_9, "和食" %>
+    <%= f.radio_button :question3, "10" %>
+    <%= label_tag :question_10, "洋食" %>
+    <input type="submit" value="次へ">
+  <% end %>
+<% end %>
+<% if @topic2.question2 == 5  %>
+  <%= form_for(@topic3) do |f| %>
+    <p>Q3.どちらに行きたい？</p>
+    <%= f.radio_button :question3, "11" %>
+    <%= label_tag :question_11, "アウトドア" %>
+    <%= f.radio_button :question3, "12" %>
+    <%= label_tag :question_12, "インドア" %>
+    <input type="submit" value="次へ">
+  <% end %>
+<% end %>
+<% if @topic2.question2 == 6  %>
+  <%= form_for(@topic3) do |f| %>
+    <p>Q3.どちらが好み？</p>
+    <%= f.radio_button :question3, "13" %>
+    <%= label_tag :question_13, "自然" %>
+    <%= f.radio_button :question3, "14" %>
+    <%= label_tag :question_14, "建物" %>
+    <input type="submit" value="次へ">
+  <% end %>
+<% end %>
