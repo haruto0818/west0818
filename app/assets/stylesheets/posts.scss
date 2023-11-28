@@ -349,6 +349,7 @@
   animation-name:fadeUpAnime;
   animation-duration:0.5s;
   animation-fill-mode:forwards;
+  opacity:0;
   }
   
   @keyframes fadeUpAnime{
@@ -386,12 +387,7 @@
 /* 左へ */
   /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
    
-  .fadeUpTrigger{
-      opacity: 0;
-  }
-  .fadeLeftTrigger{
-    opacity: 0;
-}
+
 
   /*--- 線から塗り（共通設定） ---*/
 
