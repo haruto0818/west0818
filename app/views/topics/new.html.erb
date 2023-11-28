@@ -1,8 +1,20 @@
-<p>Q1.茨城に求めていることは？</p>
-<%= form_for(@topic, class: 'form-horizontal', role: 'form') do |f| %>
-  <%= f.radio_button :question, "1" %>
-  <%= label_tag :question_1, "フード" %>
-  <%= f.radio_button :question, "2" %>
-  <%= label_tag :question_2, "観光" %>
-  <input type="submit" value="次へ">
-<% end %>
+<div class="back">
+  <div class="col-12">
+    <p>Q1.茨城に求めていることは？</p>
+  </div>
+  <%= form_for(@topic, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="col-6">
+      <div class="col-7">
+        <%= f.radio_button :question, "1", id: "question_1"  %>
+        <label for="question_1">フード</label>
+      </div>
+      <div class="col-7">
+        <%= f.radio_button :question, "2", id: "question_2"  %>
+        <label for="question_2">観光</label>
+      </div>
+    </div>
+    <div class="sindanbotan">
+      <%= f.submit "次へ", class: "button" %>
+    </div>
+  <% end %>
+</div>

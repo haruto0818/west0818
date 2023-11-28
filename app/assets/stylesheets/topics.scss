@@ -1,3 +1,82 @@
 // Place all the styles related to the topics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.container-2 {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: #1f1f1fdd;
+    justify-content: center;
+  }
+.col-12 p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 1000;
+    
+}
+.sindanbotan{
+    text-align: center;
+    padding-bottom: 185px;
+}
+.col-6{
+    justify-content: center;
+}
+.col-6 input{
+    display: none;
+}
+.col-6 label{
+    display: block;
+    cursor: pointer;
+    border-right: 1px solid #D7D7D7;
+    background: #E5E5E5;
+    color: #555E64;
+    font-size: 20px;
+    text-align: center;
+    transition: .2s;
+    border-radius: 25px;
+    padding: 5%;
+}
+.col-6 input[type="radio"]:checked + label {
+    background-color: #0bd;
+    color: #fff;
+}
+.col-7{
+    margin: 5%;
+}
+.col-8{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    color: #1f1f1fdd;
+    justify-content: center;
+    text-align: center;
+    margin-top: 400px;
+ }
+ .col-9{
+    display: flex;
+    align-items: center;
+    color: #1f1f1fdd;
+    justify-content: center;
+    text-align: center;
+ }
+ .col-10{
+    height: 250px;
+    align-items: center;
+    color: #1f1f1fdd;
+    justify-content: center;
+    text-align: center;
+ }
+ .col-11{
+    display: flex;
+ }
+ .col-13 p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    height: 20vh;
+    padding-top: 50px;
+    align-items: center;
+    color: #1f1f1fdd;
+    justify-content: center;
+ }

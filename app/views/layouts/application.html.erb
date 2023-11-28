@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kanto</title>
+    <title>Ibaraki Tourism</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/css/3-2-3-1.css">
+    <link rel="stylesheet" type="text/css" href="css/7-1-28.css">
+    </head>
 
   <body>
-    <%= yield %>
+    <div class="header">
+      <div class="header1">
+        <%=link_to 'Ibaraki Web Tourism',posts_index_path ,class: 'linkfirst' %>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+      </div>
+      <div class="header-list">
+        <ul>
+          <li><a href="#">Area<span>▼</span></a>
+            <ul>
+                <li><a href="/posts/northibaraki">North Ibaraki</a></li>
+                <li><a href="/posts/centralibaraki">Central Ibaraki Ibaraki</a></li>
+                <li><a href="/posts/southibaraki">South Ibaraki</a></li>
+                <li><a href="/posts/westibaraki">West Ibaraki</a></li>
+                <li><a href="/posts/rokkouibaraki">Rokko Ibaraki</a></li>
+            </ul>
+          </li>
+          <li><a href="/posts/food">Food</a></li>
+          <li><a href="/posts/sightseeing">Sightseeing</a></li>
+          <li><a href="/topics/new">おすすめを診断</a></li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>

@@ -15,5 +15,80 @@
  */
 *{
     margin: 0;
-padding: 0;
+    padding: 0;
+}
+/* Global Menu */
+ .header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    background-color:   lightblue;
+}
+ul > li{
+    display: inline-block;
+}
+ul > li > a{
+    padding: 15px 30px;
+    display: block;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-family: 'Oswald', sans-serif;
+    color: #efefef;
+}
+ul > li > span{
+    margin-left: 1.2em;
+}
+ul > li:hover > a{
+    background-color: #efefef;
+    color: #444;
+}
+ 
+/* Submenu */
+ 
+ul li ul{
+    position: absolute;
+    top: 55px;
+    left: 55%;
+   z-index: 1000;
+}
+ul li ul li{
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    color: #efefef;
+}
+ul li ul li a{
+    background-color: #efefef;
+    color: #444;
+}
+ul li ul li a:hover{
+    background-color: #ddd;
+}
+.header ul li ul li{
+    height: 0;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    color: #efefef;
+}
+.header ul li:hover ul li{
+    height: auto; /*サブメニューの高さ*/
+    overflow: visible;
+}
+.header1{
+    margin-left: 2%;
+}
+.linkfirst{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: #efefef;
+}
+.header-list{
+    display: flex;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    color: #efefef;
+}
+.header-ul{
+    display: flex;
 }

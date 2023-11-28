@@ -1,20 +1,43 @@
-<% if @topic.question == 1  %>
-  <%= form_for(@topic2) do |f| %>
-    <p>Q2.どちらを食べたい？</p>
-    <%= f.radio_button :question2, "3" %>
-    <%= label_tag :question_3, "スイーツ" %>
-    <%= f.radio_button :question2, "4" %>
-    <%= label_tag :question_4, "グルメ" %>
-    <input type="submit" value="次へ">
+<div class="back">
+  <% if @topic.question == 1  %>
+    <%= form_for(@topic2) do |f| %>
+      <div class="col-12">
+        <p>Q2.どちらを食べたい？</p>
+      </div>
+      <div class="col-6">
+        <div class="col-7">
+          <%= f.radio_button :question2, "3", id: "question_3"  %>
+          <label for="question_3">スイーツ</label>
+        </div>
+        <div class="col-7">
+          <%= f.radio_button :question2, "4", id: "question_4"   %>
+          <label for="question_4">グルメ</label>
+        </div>
+      </div>
+      <div class="sindanbotan">
+        <%= f.submit "次へ", class: "button" %>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
-<% if @topic.question == 2  %>
-  <%= form_for(@topic2) do |f| %>
-    <p>Q2.どちらに行きたい？</p>
-    <%= f.radio_button :question2, "5" %>
-    <%= label_tag :question_5, "レジャー" %>
-    <%= f.radio_button :question2, "6" %>
-    <%= label_tag :question_6, "風景" %>
-    <input type="submit" value="次へ">
+
+  <% if @topic.question == 2  %>
+    <%= form_for(@topic2) do |f| %>
+      <div class="col-12">
+        <p>Q2.どちらに行きたい？</p>
+      </div>
+      <div class="col-6">
+        <div class="col-7">
+          <%= f.radio_button :question2, "5", id: "question_5"    %>
+          <label for="question_5">レジャー</label>
+        </div>
+        <div class="col-7">
+          <%= f.radio_button :question2, "6", id: "question_6"    %>
+          <label for="question_6">風景</label>
+        </div>
+      </div>
+        <div class="sindanbotan">
+          <%= f.submit "次へ", class: "button" %>
+        </div>
+    <% end %>
   <% end %>
-<% end %>
+</div>

@@ -1,19 +1,16 @@
 <div class="back">
-
-    <%= link_to"おすすめを提案",new_topic_path, class:"ddmenu"%>
-
     <div class="top_container">
+        <div class="image_container">
+            <%= image_tag"nemophila.jpg" %>
+            <%= image_tag"kasumigaura.jpg" %>
+            <%= image_tag"etowa.jpg" %>
+        </div>
         <div class="theme1">
-            <p>茨城の魅力、一歩先を行く旅先へ</p>
+            茨城の魅力、一歩先を行く旅先へ
         </div>
     </div>
-
-    <div class="image_container">
-         <%= image_tag"nemophila.jpg",  class:"top_image" %>
-    </div>
-
     <div class="merit_container">
-       <div class="merit">
+        <div class="fadeLeftTrigger">
             <div class="title1">
                 茨城を観光するメリット
             </div>
@@ -48,62 +45,105 @@
         </div>
         <div class="northcentral">
             <div class="north_ibaraki">
-                <%= image_tag"bungee.jpg",  class:"banzi_image"%>
-                <div class="north">
-                    <span class="underline_black">県北エリア</span>
+                <div class="fadeUpTrigger">
+                    <%= image_tag"bungee.jpg",  class:"banzi_image"%>
                 </div>
-                <div class="sub1">
-                    North Ibarakai
+                <div class="name_flex">
+                    <div class="name_view">
+                        <div class="north">
+                            <span class="underline_black">県北エリア</span>
+                        </div>
+                        <div class="sub1">
+                            North Ibarakai
+                        </div>
+                    </div>
+                    <a href="/posts/northibaraki/" class="btn05 bordercircle3">
+                        <span class="underline_black">view more →</span>
+                    </a>
                 </div>
             </div>
             <div class="central_ibaraki">
-                <%= image_tag"aqueworld.jpg",  class:"aqua_image"%>
-                <div class="central">
-                    <span class="underline_black">県央エリア</span>    
+                <div class="fadeUpTrigger"> 
+                    <%= image_tag"aqueworld.jpg",  class:"aqua_image"%>
                 </div>
-                <div class="sub2">
-                    Central Ibarakai
+                <div class="name_flex">
+                    <div class="name_view">
+                        <div class="central">
+                            <span class="underline_black">県央エリア</span>    
+                        </div>
+                        <div class="sub2">
+                            Central Ibarakai
+                        </div>
+                    </div>
+                    <a href="/posts/centralibaraki/" class="btn05 bordercircle3">
+                        <span class="underline_black">view more →</span>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="westsouth">
             <div class="west_ibaraki">
-                <%= image_tag"tukubamountain.jpg",  class:"tsukuba_image"%>
-                <div class="west">
-                    <span class="underline_black">県西エリア</span>
+                <div class="fadeUpTrigger">
+                    <%= image_tag"tukubamountain.jpg",  class:"tsukuba_image"%>
                 </div>
-                <div class="sub1">
-                    West Ibarakai
+                <div class="name_flex">
+                    <div class="name_view">
+                        <div class="west">
+                            <span class="underline_black">県西エリア</span>
+                        </div>
+                        <div class="sub1">
+                            West Ibarakai
+                        </div>
+                    </div>
+                    <a href="/posts/westibaraki/" class="btn05 bordercircle3">
+                        <span class="underline_black">view more →</span>
+                    </a>
                 </div>
             </div>
             <div class="south_ibaraki">
-                <%= image_tag"unagi.jpg",  class:"unagi_image"%>
-                <div class="south">
-                    <span class="underline_black">県南エリア</span>
+                <div class="fadeUpTrigger">
+                    <%= image_tag"unagi.jpg",  class:"unagi_image"%>
                 </div>
-                <div class="sub2">
-                    South Ibarakai
+                <div class="name_flex">
+                    <div class="name_view">
+                        <div class="south">
+                            <span class="underline_black">県南エリア</span>
+                        </div>
+                        <div class="sub2">
+                            South Ibarakai
+                        </div>
+                    </div>
+                    <a href="/posts/southibaraki/" class="btn05 bordercircle3">
+                        <span class="underline_black">view more →</span>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="rokko_ibaraki">
-            <%= image_tag"shrine.jpg",  class:"zinzya_image"%>
-            <div class="rokko">
-                <span class="underline_black">鹿行エリア</span>
+            <div class="fadeUpTrigger">
+                <%= image_tag"shrine.jpg",  class:"zinzya_image"%>
             </div>
-            <div class="sub1">
-                Rokko Ibarakai
-            </div>
+            <div class="name_flex">
+                <div class="name_view">
+                    <div class="rokko">
+                        <span class="underline_black">鹿行エリア</span>
+                    </div>
+                    <div class="sub1">
+                        Rokko Ibarakai
+                    </div>
+                </div>
+                <a href="/posts/rokkouibaraki/" class="btn05 bordercircle3">
+                    <span class="underline_black">view more →</span>
+                </a>
+            </div> 
         </div>
     </div>
-        
     <div class="shrine_container">
         <div class=shrine image>
             <%= image_tag"splash.jpg",  class:"middle_image" %>
         </div>
     </div>
-
-
+</div>
     <div class="genre_container">
         <div class="area">
             <h2>Gerne<h2>
@@ -113,39 +153,56 @@
         </div>
         <div class="food_theme">
             <div class="nikumattya">
-                <%= image_tag"nikumattya.jpg",  class:"photo1_image"%>
+                <div class="fadeUpTrigger">
+                    <%= image_tag"nikumattya.jpg",  class:"photo1_image"%>
+                </div>
             </div>
             <div class="introduction1">
-                <div class="tag1">
-                    FOOD
-                </div>
-                <div class="tag2">
-                    茨城グルメ
-                </div>
-                <div class="tag3">
-                    美味の宝庫、<br>
-                    茨城へ。<br>
-                    地元の逸品を一口<br>
+                <div class="fadeLeftTrigger">
+                    <div class="tag1">
+                        FOOD
+                    </div>
+                    <div class="tag2">
+                        茨城グルメ
+                    </div>
+                    <div class="tag3">
+                        美味の宝庫、<br>
+                        茨城へ。<br>
+                        地元の逸品を一口<br>
+                    </div>
+                    <a href="/posts/food/" class="btn05 bordercircle3">
+                            <span class="underline_black">view more →</span>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="sightseeing_theme">
             <div class="introduction2">
-                <div class="tag1">
-                    SIGHTSEEING
-                </div>
-                <div class="tag2">
-                    観光地
-                </div>
-                <div class="tag3">
-                    息をのむ美しさ、<br>
-                    茨城の瞬間、<br>
-                    永遠の記憶<br>
+                <div class="fadeLeftTrigger">
+                    <div class="tag1">
+                        SIGHTSEEING
+                    </div>
+                    <div class="tag2">
+                        観光地
+                    </div>
+                    <div class="tag3">
+                        息をのむ美しさ、<br>
+                        茨城の瞬間、<br>
+                        永遠の記憶<br>
+                    </div>
+                    <a href="/posts/sightseeing/" class="btn05 bordercircle3">
+                        <span class="underline_black">view more →</span>
+                    </a>
                 </div>
             </div>
             <div class="kanko">
-                <%= image_tag"sightseeing.jpg",  class:"photo2_image"%>
+                <div class="fadeUpTrigger">
+                    <%= image_tag"sightseeing.jpg",  class:"photo2_image"%>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/js/3-2-3-1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/4-14/js/4-14.js"></script>
